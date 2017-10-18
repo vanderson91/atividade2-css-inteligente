@@ -1,0 +1,49 @@
+@mixin navbarbase ($f){
+	display: block!important;
+    height: auto!important;
+    padding-bottom: 0;
+    overflow: visible!important;
+    list-style: none;
+    float: $f;
+}
+@mixin navbase ($bgcolor, $color, $bordercolor){
+	background-color: $bgcolor;
+	color: $color;
+	border-color: $bordercolor;
+	border: solid 1px;
+	font-weight: bold;
+
+	position: relative;
+    min-height: 60px;
+    margin-bottom: 20px;
+}
+%navbaritemhover {
+	background: gray;
+	color:white;
+}
+.nav{
+	@include navbase(white, blueviolet, blueviolet);
+	// @include navbase(red, white, white);
+	// @include navbase(green, yellow, yellow);
+}
+.nav-bar{
+	@include navbarbase(left);
+}
+.nav-bar-right{
+	@include navbarbase(right);
+    margin: 0;
+}
+.nav-bar-item{
+	padding: 21px;
+	float: left;
+}
+.nav-bar-item:hover{
+	@extend %navbaritemhover;
+}
+.nav-bar-brand{
+	font-size: 28px;
+	padding: 14px;
+}
+.nav-bar-brand:hover{
+	@extend %navbaritemhover;
+}

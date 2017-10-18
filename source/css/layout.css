@@ -1,0 +1,38 @@
+.nav-bar-item:hover, .nav-bar-brand:hover {
+  background: gray;
+  color: white; }
+
+.nav {
+  background-color: white;
+  color: blueviolet;
+  border-color: blueviolet;
+  border: solid 1px;
+  font-weight: bold;
+  position: relative;
+  min-height: 60px;
+  margin-bottom: 20px; }
+
+.nav-bar {
+  display: block !important;
+  height: auto !important;
+  padding-bottom: 0;
+  overflow: visible !important;
+  list-style: none;
+  float: left; }
+
+.nav-bar-right {
+  display: block !important;
+  height: auto !important;
+  padding-bottom: 0;
+  overflow: visible !important;
+  list-style: none;
+  float: right;
+  margin: 0; }
+
+.nav-bar-item {
+  padding: 21px;
+  float: left; }
+
+.nav-bar-brand {
+  font-size: 28px;
+  padding: 14px; }
